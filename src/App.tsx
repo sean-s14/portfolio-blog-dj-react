@@ -11,7 +11,6 @@ import {
 } from 'src/layout/all-layouts';
 
 import {
-  UsersPage,
   HomePage,
   AboutPage,
   ContactPage,
@@ -26,7 +25,6 @@ import {
   BlogDetailCreate,
   BlogDetailEdit,
   Page404,
-  TodoPage,
 } from 'src/pages/all-pages';
 
 import {
@@ -79,7 +77,6 @@ export default function App({ hideLoader, showLoader  }) {
   
   const routes = [
     { path: '/',        Component: HomePage,      RouteType: Route,  inverted: false },
-    { path: '/users',   Component: UsersPage,     RouteType: Route,  inverted: false },
     { path: '/contact', Component: ContactPage,   RouteType: Route,  inverted: false },
     { path: '/about',   Component: AboutPage,     RouteType: Route,  inverted: false },
     { path: '/projects',                    Component: ProjectsPage,    RouteType: Route,  inverted: false },
@@ -103,7 +100,6 @@ export default function App({ hideLoader, showLoader  }) {
     { path: '/logout',  Component: LogoutButton,  RouteType: ProtectedRoute,  inverted: false },
     { path: '/profile', Component: ProfilePage,   RouteType: ProtectedRoute,  inverted: false },
     { path: '/settings',Component: SettingsPage,  RouteType: ProtectedRoute,  inverted: false },
-    { path: '/todo',    Component: TodoPage,      RouteType: ProtectedRoute,  inverted: false },
   ];
 
   const navWidth = '10rem';

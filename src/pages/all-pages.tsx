@@ -1,7 +1,5 @@
 
-import UsersPage from 'src/pages/users-page';
 import HomePage from 'src/pages/home-page';
-import TodoPage from 'src/pages/todo';
 import Page404 from 'src/pages/page-404';
 import ContactPage from 'src/pages/contact-page';
 import AboutPage from 'src/pages/about-page';
@@ -27,5 +25,5 @@ export {
     ProjectsListPage, ProjectsDetailPage, ProjectsDetailCreate,
     ProjectsDetailEdit, BlogPage, BlogListPage,
     BlogDetailPage, BlogDetailCreate, BlogDetailEdit,
-    ContactPage, Page404, UsersPage, TodoPage,
+    ContactPage, Page404,
 }
