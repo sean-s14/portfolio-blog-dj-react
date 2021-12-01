@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 import {
     Typography,
-    // Skeleton,
-    // Grid,
     Box,
     Paper,
 
@@ -28,8 +26,9 @@ export default function BlogDetailPage() {
         axiosInstance
             .get(`/articles/${slug}`)
             .then( res => {
-                setArticle( res.data );
+                console.log( res );
                 console.log( res.data );
+                setArticle( res.data );
             })
             .catch( err => console.log(err.request) );
     }, [slug])
@@ -99,12 +98,14 @@ export default function BlogDetailPage() {
                         p: 2
                     }}
                 >
+                    {/* Date */}
                     <Typography
                         variant='caption'
                     >
                         {article && (`${new Date(article.date_created).getDate()} ${months[new Date(article.date_created).getMonth()]} ${new Date(article.date_created).getFullYear()}`)}
                     </Typography>
 
+                    {/* Title */}
                     <Typography
                         variant='h5'
                         sx={{
@@ -114,6 +115,7 @@ export default function BlogDetailPage() {
                         {article && article.title}
                     </Typography>
 
+                    {/* Content */}
                     <Typography
                         component={'div'}
                         variant='body2'

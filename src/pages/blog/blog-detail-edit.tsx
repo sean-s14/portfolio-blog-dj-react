@@ -39,8 +39,9 @@ export default function BlogDetailEdit() {
         axiosInstance
             .get(`/articles/${slug}`)
             .then( res => {
-                setArticle( res.data );
+                console.log( res );
                 console.log( res.data );
+                setArticle( res.data );
             })
             .catch( err => console.log(err.request) );
     }
