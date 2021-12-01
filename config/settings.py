@@ -142,12 +142,16 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [ str(BASE_DIR.joinpath('build/static')), ]
+STATICFILES_DIRS = [ 
+    str(BASE_DIR.joinpath('build/static')),
+    str(BASE_DIR.joinpath('build/media')),
+    str(BASE_DIR.joinpath('media/images'))
+]
 STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # If you want to serve user uploaded files add these settings
-MEDIA_ROOT = str(BASE_DIR.joinpath('build/media'))
+MEDIA_ROOT = str(BASE_DIR.joinpath('media'))
 MEDIA_URL = '/media/'
 # import os
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'build', 'images')

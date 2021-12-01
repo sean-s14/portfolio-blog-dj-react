@@ -33,6 +33,7 @@ export default function BlogPage() {
             .get(`/articles/?page=1&page_size=3`)
             .then( res => {
                 // setArticles( res.data.results );
+                console.log( res )
                 console.log( res.data );
                 setTimeout(() => {
                     setArticles( res.data.results );
