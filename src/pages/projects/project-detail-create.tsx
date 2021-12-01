@@ -147,6 +147,7 @@ export default function ProjectDetailCreate() {
                     <Editor
                         // @ts-ignore: Type 'Editor' is not assignable to type 'null'.
                         onInit={(evt, editor) => editorRef.current = editor}
+                        apiKey="xml55fdjmkrdq1yhz0j07so76ypn9oxz2juz6hwniq0geahd"
                         initialValue="<p>Test content.</p>"
                         onEditorChange={ handleEditor }
                         init={{
