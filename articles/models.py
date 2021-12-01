@@ -15,7 +15,7 @@ def upload_to(instance, filename):
 class Article(models.Model):
     title = models.CharField(max_length=100)
     slug = models.SlugField(max_length=100, unique=True)
-    image = models.ImageField(_("Image"), upload_to=upload_to, default='default.png')
+    image = models.ImageField(_("Image"), upload_to=upload_to, default='images/default.png')
     content = tinymce_models.HTMLField()
     date_created = models.DateTimeField(auto_now_add=True)
     date_modified = models.DateTimeField(auto_now=True)
