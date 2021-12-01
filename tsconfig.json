@@ -1,6 +1,6 @@
 {
-    "compilerOptions": {
-      "baseUrl": ".",
+  "compilerOptions": {
+    "baseUrl": ".",
     "noImplicitAny": false,
     "target": "es5",
     "lib": [

@@ -36,7 +36,7 @@ from django.views.decorators.cache import never_cache
 from django.conf import settings
 from django.conf.urls.static import static
 
-index = never_cache(TemplateView.as_view(template_name='index.html'))
+index = never_cache(TemplateView.as_view(template_name='build/index.html'))
 
 urlpatterns = [
     path('admin/', admin.site.urls),         
