@@ -145,7 +145,7 @@ STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [ 
     str(BASE_DIR.joinpath('build/')),
-    # str(BASE_DIR.joinpath('build/static')),
+    str(BASE_DIR.joinpath('build/static')),
     # str(BASE_DIR.joinpath('build/media')),
     str(BASE_DIR.joinpath('media/images'))
 ]

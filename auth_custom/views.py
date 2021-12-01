@@ -57,4 +57,3 @@ class LogoutAndBlacklistRefreshTokenForUserView(APIView):
         except Exception as e:
             print(request.data["refresh_token"])
             return Response(status=status.HTTP_400_BAD_REQUEST)
-    

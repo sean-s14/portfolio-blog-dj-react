@@ -47,7 +47,7 @@ urlpatterns = [
     path('articles/', include('articles.urls')),
     re_path('.*', index, name='index'),
 ] 
-urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) 
+# urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 # This allows user to login and logout using the browsable api

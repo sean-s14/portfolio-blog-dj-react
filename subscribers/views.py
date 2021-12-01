@@ -127,3 +127,4 @@ class SubscriberViewSet(viewsets.ModelViewSet):
     serializer_class = SubscriberSerializer
     permission_classes = ()
     authentication_classes = ()
+

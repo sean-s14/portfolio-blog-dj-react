@@ -37,8 +37,9 @@ export default function ProjectDetailEdit() {
         axiosInstance
             .get(`/projects/${slug}`)
             .then( res => {
+                console.log( res );
+                console.log( res.data );
                 setProject( res.data );
-                // console.log( res.data );
             })
             .catch( err => console.log(err.request) );
     }
