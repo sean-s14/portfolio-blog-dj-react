@@ -141,13 +141,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 
+STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [ 
     str(BASE_DIR.joinpath('build/static')),
     str(BASE_DIR.joinpath('build/media')),
     str(BASE_DIR.joinpath('media/images'))
 ]
-STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # If you want to serve user uploaded files add these settings
